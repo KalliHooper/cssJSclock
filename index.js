@@ -7,7 +7,7 @@
   const menuitems = document.querySelectorAll('.inline-items li');
   const now = new Date();
   let lastsecond = now.getSeconds();
-  let init_delay = lastsecond + 3;
+  let init_delay = lastsecond;
 
   function clock() {
     const now = new Date();
@@ -22,7 +22,7 @@
       const hours = now.getHours();
       const hoursDegrees = ((hours / 12) * 360) + 90;
       hoursHand.style.transform = `rotate(${hoursDegrees}deg)`
-      if(init_delay && lastsecond>init_delay) {
+      if(init_delay) {
         header.classList.add("fadein");
         footer.classList.add("fadein");
         menu.classList.add('slidein');
