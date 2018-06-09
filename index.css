@@ -4,7 +4,7 @@ html {
   background-position: center;
   font-family: 'helvetica neue';
   text-align: center;
-  font-size: 10px;
+  font-size: 16px;
 }
 
 body {
@@ -136,16 +136,15 @@ body {
 footer,
 header {
   position: relative;
-  margin: .5em;
+  margin: auto;
+  height: 40px;
 }
-header, footer {
-  opacity: 0.0;
-}
-.fadein {
-  transition: all 4.0s ease;
+
+header,
+footer {
   background-color: white;
-  opacity: 1.0;
-  font-size: 2em;
+  opacity: 0.0;  
+  overflow: hidden;
 }
 
 .leftColumn,
@@ -153,7 +152,13 @@ header, footer {
 footer,
 header {
   border: 1px solid #ccc;
-  padding: 1.25em;
+  padding: .25em;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .leftColumn {
@@ -161,6 +166,7 @@ header {
 }
 
 .nav {
+  width: 1%;
   list-style: none;
   margin-left: 0;
   margin-bottom: 0;
@@ -179,10 +185,13 @@ header {
 }
 
 .inline-items li {
+  display: inline-block;
+  width: 1%;
   margin-left: 0;
   border-left: 1px solid black;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  transition: transform 3s;
 }
 
 .inline-items li:first-child {
@@ -194,6 +203,23 @@ header {
 
 .inline-items li:last-child {
   padding-right: 0;
+}
+
+.fadein {
+  transition: opacity 4.0s ease;
+  opacity: 1.0;
+}
+
+.nav.slidein {
+  transition: width 2.0s ease;
+  width: 100%;
+}
+
+.inline-items li.grow {
+  transition: all 3.0s ease;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 20%;
 }
 
 /* MEDIA QUERIES */

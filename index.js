@@ -3,8 +3,11 @@
   const hoursHand = document.querySelector('.hour-hand');
   const header = document.querySelector('header');
   const footer = document.querySelector('footer');
-  let lastsecond = -1;
-  let fadein_flag = true;
+  const menu = document.querySelector('ul.nav');
+  const menuitems = document.querySelectorAll('.inline-items li');
+  const now = new Date();
+  let lastsecond = now.getSeconds();
+  let init_delay = lastsecond + 3;
 
   function clock() {
     const now = new Date();
@@ -19,15 +22,18 @@
       const hours = now.getHours();
       const hoursDegrees = ((hours / 12) * 360) + 90;
       hoursHand.style.transform = `rotate(${hoursDegrees}deg)`
-      if(fadein_flag) {
+      if(init_delay && lastsecond>init_delay) {
         header.classList.add("fadein");
         footer.classList.add("fadein");
-        fadein_flag = false;
+        menu.classList.add('slidein');
+        for(var i=0; i<menuitems.length; i++){
+          menuitems[i].classList.add('grow');
+        }
+        init_delay = false;
       }
-    } else { console.log(lastsecond)}
+    }
   
     requestAnimationFrame(clock);
   }
-
 
   requestAnimationFrame(clock);
