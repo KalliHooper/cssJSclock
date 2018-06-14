@@ -1,16 +1,102 @@
-<html>
-   <head> 
-      <title>first page</title>  
-   </head>
-   <body bgcolor="FCF8E0">
-       <h1 align="center" /> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+   flex: 50%;
+   padding: 10px;
+
+}
+</style>
+  <style type="text/css">
+<!--
+.tab { margin-left: 150px; }
+-->
+</style>
+  <style type="text/css">
+<!--
+.img { margin-right: 200px; }
+-->
+</style>
+</head>
+<body bgcolor="FCF8E0">
+  <header>
+    <nav>
+      <ul class="nav inline-items">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="Blur-Border">My Projects</a>
+      
+            </li> 
+        <li>
+          <a href="#">Photos</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="columnsContainer">
+
+    <div class="leftColumn">
+      
+      
+       
+          <div class="hand hour-hand"></div>
+          <div class="hand min-hand"></div>
+          <div class="hand second-hand"></div>
+        </div>
+      </div>
+    </div>
+
+  
+     
+
+      
+    </div>
+
+  </div>
+
+  <footer>
+    <ul class="inline-items">
+      <li>
+        <a href="camel.PNG">Contact Us</a>
+      </li>
+      <li>
+        <a href="#">Sitemap</a>
+      </li>
+      <li>
+        <a href="#">Privacy Policy</a>
+      </li>
+    </ul>
+  </footer>
+  <script src="index.js"></script>
+<h1 align="center" /> 
         <font color="38A1B4" size=12px> <strong> Welcome to My Portfolio! </font>
        </h1>
-  <div class="section">
-    <h1 align="left"><span > <hr> </br>About Me</span></h1>
-    <p align= "left">     I'm learning to code! Blah blah blah. This summer I'm working at Plexus and stuff </br>so I can become a real person with a job which is p cool and super fun woohoo look </br> at this picture of me I'm so professional! </p>
-  <img align="right" src="Michigan Tech - Career Fair 022118 164333.jpg" height="400px" width="300px" border="3px" alt="" />
+<p> <hr> </p>
+<div class="row">
+  <div class="column">
+  <h1 align="left" class= "tab"><span > About Me</span></h1>
+    <p align= "left" class="tab">     I'm learning to code! Blah blah blah. This summer I'm working at Plexus and stuff </br>so I can become a real person with a job which is p cool and super fun woohoo look </br> at this picture of me I'm so professional! </p> </div>
+  <div class="column"> <img align="right" class="img" src="Michigan Tech - Career Fair 022118 164333.jpg" height="400px" width="300px" border="3px" alt="" />
         </div>  
-     
-   </body>
+</div>
+
+</body>
+
 </html>
