@@ -16,7 +16,7 @@
   <!-- <link href='css/nav.css' rel='stylesheet' type='text/css'> -->
   <link href='css/clock.css' rel='stylesheet' type='text/css'>
   <link href='css/Drum.CSS' rel='stylesheet' type='text/css'
-
+  <link href='css/Blur.css' rel='stylesheet' type='text/css'
   <style>
     .section {
       text-align: center;
@@ -181,8 +181,43 @@
       </div>
     </div>
 
-    <div id="tree" class="section big-picture">
+    <div id="Blur" class="section big-picture">
+        <div class="diamond-narrow pos1"></div>
+        <div class="diamond-narrow pos2"></div>
+        <div class="diamond-narrow pos3"></div>
+        <div class="diamond-narrow pos4"></div>
+      </div>
     </div>
+    <h2>Blur and Border <span class='hl'></span></h2>
+    <a href= "../index.html">home </a> 
+  
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input id="spacing" type="range" name="spacing" min="10" max="200" value="0" data-sizing="px">
+  
+      <label for="blur">Blur:</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+  
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#f168cf">
+    </div>
+  
+  
+   
+    <div>
+      <button onclick="prev()"> Prev </button>
+      <img id="slider" src="img/me3.PNG" 
+        width="300px" height="300px"/>
+      <button onclick="next()"> Next </button>
+    </div>
+
+    <div class="diamond-group">
+        <div class="diamond-narrow pos1"></div>
+        <div class="diamond-narrow pos2"></div>
+        <div class="diamond-narrow pos3"></div>
+        <div class="diamond-narrow pos4"></div>
+      </div>
+
   </div>
 
 
@@ -195,6 +230,7 @@
   <script src="js/index.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/Drum.js"></script>
+  <script src="js/Blur.js"></script>
 </body>
 
 </html>

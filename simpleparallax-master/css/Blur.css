@@ -1,0 +1,42 @@
+:root {
+    --base: #f168cf;
+    --spacing:10px;
+    --blur:10px;
+  }
+  img{
+    padding:var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+  
+  
+  }
+  .h1{
+    color:var(--base);
+  
+  }
+  button {
+      margin-top:50px;
+      float:center;
+      height:50px;
+  }
+  
+      /*
+        misc styles, nothing to do with CSS variables
+      */
+  
+      body {
+        text-align: center;
+        background: #fdfdfd;
+        color: rgb(63, 37, 179);
+        font-family: 'helvetica neue', sans-serif;
+        font-weight: 100;
+        font-size: 50px;
+      }
+  
+      .controls {
+        margin-bottom: 50px;
+      }
+  
+      input {
+        width:100px;
+      }
