@@ -236,14 +236,13 @@ h3 {
 
 #slide2 {
   position: relative;
-  background-color: #fff;
-  color: #333333;
-  height: 300px;
-  margin: 0 auto;
+  background-color: rgb(37, 172, 196);
+  color: #0707078c;
+  height: 100px;
+  margin:  auto;
   overflow: hidden;
-  padding: 200px 0;
-  background: url('../img/grass.png');
-  background-size: 100%;
+  
+
 }
 #slide2 .content {
   position: relative;
@@ -281,7 +280,13 @@ h3 {
   color: #fff;
   height: 600px;
   padding: 800px 0 0 0;
+  
   background-size: cover;
+}
+
+#slide3 .content {
+  background-image: url(../img/camel.PNG);
+  position: fixed;
 }
 
 #slide4 {
@@ -311,4 +316,120 @@ h3 {
 #copyright a {
   text-decoration: none;
   color: #fff;
+}
+
+.clock {
+  background: #018DED url(camel.png);
+  background-size: cover;
+  background-position: center;
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid black;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 4rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+  /* account for the height of the clock hands */
+}
+
+.hour-hand {
+  width: 20%;
+  height: 6px;
+  background: blue;
+  position: absolute;
+  top: 50%;
+  border: 2px solid black;
+  background: linear-gradient(to right, red, orange);
+  margin-left: 30%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.02s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand::after {
+  content: ' ';
+  height: 0px;
+  position: absolute;
+  width: 0px;
+  border: 7px solid transparent;
+  /* arrow size */
+  border-right-color: black;
+  /* arrow color */
+  position: absolute;
+  top: -4px;
+  left: -20px;
+}
+
+.min-hand {
+  width: 50%;
+  height: 6px;
+  background: linear-gradient(to right, purple, blue);
+  /* background :purple; */
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.02s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.min-hand::after {
+  content: ' ';
+  height: 0px;
+  position: absolute;
+  width: 0px;
+  border: 7px solid transparent;
+  /* arrow size */
+  border-right-color: black;
+  /* arrow color */
+  position: absolute;
+  top: -4px;
+  left: -20px;
+}
+
+.second-hand {
+  width: 57%;
+  height: 6px;
+  background: green;
+  position: absolute;
+  border: 2px solid black;
+  background: linear-gradient(to right, green, yellow);
+  top: 50%;
+  right: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.02s;
+  transition-timing-function: cubic-bezier(0.1, 1.7, 0.58, 1);
+}
+
+.second-hand::after {
+  content: ' ';
+  height: 0px;
+  position: absolute;
+  width: 0px;
+  border: 7px solid transparent;
+  /* arrow size */
+  border-right-color: black;
+  /* arrow color */
+  position: absolute;
+  top: -4px;
+  left: -20px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }

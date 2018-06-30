@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Creating a Simple Parallax Scrolling Website</title>
+  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+  <link href='css/nav.css' rel='stylesheet' type='text/css'>
+  <link href='css/clock.css' rel='stylesheet' type='text/css'>
+  <link href='css/index.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <!-- HEADER START -->
+  <header id="header">
+    <div class="content">
+      <div id="logo">
+        <div id="screen">
+          <div id="live">
+            <span id="k">K</span>
+            <span id="a">A</span>
+            <span id="l">L</span>
+            <span id="l2">L</span>
+            <span id="i">I</span>
+            <span id="h">H</span>
+            <span id="o">O</span>
+            <span id="o2">O</span>
+            <span id="p">P</span>
+            <span id="e">E</span>
+            <span id="r">R</span>
+            <span id="dot">.</span>
+            <span id="c">C</span>
+            <span id="o3">O</span>
+            <span id="m">M</span>
+          </div>
+        </div>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li>
+            <a onclick="scrollSlide(this,'#slide1');" class="active" title="Next Section">Slide 1</a>
+          </li>
+          <li>
+            <a onclick="scrollSlide(this,'#slide2');" title="Next Section">Slide 2</a>
+          </li>
+          <li>
+            <a onclick="scrollSlide(this,'#slide3');" title="Next Section">Slide 3</a>
+          </li>
+          <li>
+            <a onclick="scrollSlide(this,'#slide4');" title="Next Section">Slide 4</a>
+          </li>
+          <li>
+            <a onclick="scrollSlide(this,'#slide5');" title="Next Section">Slide 5</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SLIDES START -->
+  <div id="water" class="big-picture">
+    <div id="floating-menu" class="shadow-it">
+      <div class="clockprojecticon floating-menu-item box">
+        <p>clock icon</p>
+      </div>
+      <div class="blurprojecticon floating-menu-item box">
+        <p>blur icon</p>
+        <div id="blur" class="popup-content">
+          <p>put blur stuff here</p>
+        </div>
+      </div>
+      <div class="anotherprojecticon floating-menu-item box">
+        <p>another icon</p>
+        <div id="another" class="popup-content">
+          <p>put another stuff here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="diamond-group rellax" data-rellax-speed="10">
+    <div class="diamond-narrow pos1"></div>
+    <div class="diamond-narrow pos2"></div>
+    <div class="diamond-narrow pos3"></div>
+    <div class="diamond-narrow pos4"></div>
+  </div>
+
+  <div id="grass" class="big-picture rellax" data-rellax-speed="1"></div>
+
+  <div class="diamond-group rellax" data-rellax-speed="10">
+    <div class="diamond-narrow pos1"></div>
+    <div class="diamond-narrow pos2"></div>
+    <div class="diamond-narrow pos3"></div>
+    <div class="diamond-narrow pos4"></div>
+  </div>
+
+  <div id="slide4" class="rellax" data-rellax-speed="-15">
+  </div>
+  <div class="sample1 rellax" data-rellax-speed="-10">in slide 4</div>
+  <div class="content rellax" data-rellax-speed="0">
+    <div class="sample2">in slide 4 content div</div>
+  </div>
+
+  <div id="clock" class="rellax shadow-it" data-rellax-speed="4">
+    <div class="clock">
+      <div class="clock-face">
+        <div class="hand hour-hand"></div>
+        <div class="hand min-hand"></div>
+        <div class="hand second-hand"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tree" class="big-picture rellax" data-rellax-speed="1"></div>
+
+  <div class="diamond-group rellax" data-rellax-speed="10">
+    <div class="diamond-narrow pos1"></div>
+    <div class="diamond-narrow pos2"></div>
+    <div class="diamond-narrow pos3"></div>
+    <div class="diamond-narrow pos4"></div>
+  </div>
+
+  <!-- SLIDES END -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/dixonandmoe/rellax/master/rellax.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/clock.js"></script>
+</body>
+
+</html>
