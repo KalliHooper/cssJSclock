@@ -16,12 +16,12 @@ html {
   background: url(../img/water.png) 50% 0 no-repeat fixed / cover;
 }
 
-#grass {
-  background: url(../img/grass.png) 50% 0 no-repeat fixed / cover;
+#Drum {
+  background: url(../img/drum.jpg) 50% 0 no-repeat fixed / cover;
 }
 
 #tree {
-  background: url(../img/tree.png) 50% 0 no-repeat fixed / cover;
+  background: url(../img/mo2.PNG) 50% 0 no-repeat fixed / cover;
 }
 
 .shadow-it {
@@ -107,10 +107,8 @@ html {
   position: absolute;
   border-radius: 50%;
   background: url(../img/camel.PNG);
-  background-size: 135%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -5px;
-  background-position-x: -94px;
   z-index: 1;
 }
 

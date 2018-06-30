@@ -15,6 +15,7 @@
   <link href='css/examples.css' rel='stylesheet' type='text/css'>
   <!-- <link href='css/nav.css' rel='stylesheet' type='text/css'> -->
   <link href='css/clock.css' rel='stylesheet' type='text/css'>
+  <link href='css/Drum.CSS' rel='stylesheet' type='text/css'
 
   <style>
     .section {
@@ -52,14 +53,14 @@
         <li data-menuanchor="water" class="active">
           <a href="#water" class="active">Home</a>
         </li>
-        <li data-menuanchor="grass">
-          <a href="#grass">Life</a>
+        <li data-menuanchor="Drum">
+          <a href="#Drum">Project 1</a>
         </li>
         <li data-menuanchor="clock">
-          <a href="#clock">Projects</a>
+          <a href="#clock">Project 2</a>
         </li>
         <li data-menuanchor="tree">
-          <a href="#tree">Contact</a>
+          <a href="#tree"> Project 3</a>
         </li>
       </ul>
 
@@ -88,13 +89,68 @@
       </div>
     </div>
 
-    <div id="grass" class="section big-picture">
+    <div id="Drum" class="section big-picture">
       <div class="diamond-group">
         <div class="diamond-narrow pos1"></div>
         <div class="diamond-narrow pos2"></div>
         <div class="diamond-narrow pos3"></div>
         <div class="diamond-narrow pos4"></div>
       </div>
+
+
+
+      <div class="keys">
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+          <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+          <span class="sound">hihat</span>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">kick</span>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+          <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+          <span class="sound">ride</span>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+          <span class="sound">tom</span>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+          <span class="sound">tink</span>
+        </div>
+      </div>
+    
+      <audio data-key="65" src="sounds/clap.wav"></audio>
+      <audio data-key="83" src="sounds/hihat.wav"></audio>
+      <audio data-key="68" src="sounds/kick.wav"></audio>
+      <audio data-key="70" src="sounds/openhat.wav"></audio>
+      <audio data-key="71" src="sounds/boom.wav"></audio>
+      <audio data-key="72" src="sounds/ride.wav"></audio>
+      <audio data-key="74" src="sounds/snare.wav"></audio>
+      <audio data-key="75" src="sounds/tom.wav"></audio>
+      <audio data-key="76" src="sounds/tink.wav"></audio>
+    
+
+
+
       <div class="diamond-group">
         <div class="diamond-narrow pos1"></div>
         <div class="diamond-narrow pos2"></div>
@@ -138,6 +194,7 @@
   <script src="js/jquery.pagepiling.js"></script>
   <script src="js/index.js"></script>
   <script src="js/clock.js"></script>
+  <script src="js/Drum.js"></script>
 </body>
 
 </html>
