@@ -20,8 +20,12 @@ html {
   background: url(../img/drum.jpg) 50% 0 no-repeat fixed / cover;
 }
 
-#tree {
+#clock {
   background: url(../img/mo2.PNG) 50% 0 no-repeat fixed / cover;
+}
+
+#Blur {
+  background: url(../img/me2.PNG) 50% 0 no-repeat fixed / cover;
 }
 
 .shadow-it {
