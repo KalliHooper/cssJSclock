@@ -20,11 +20,11 @@ html {
   background: url(../img/drum.jpg) 50% 0 no-repeat fixed / cover;
 }
 
-#clock {
+#desert {
   background: url(../img/mo2.PNG) 50% 0 no-repeat fixed / cover;
 }
 
-#Blur {
+#Blurred {
   background: url(../img/me2.PNG) 50% 0 no-repeat fixed / cover;
 }
 
@@ -114,6 +114,8 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+  top: 25%;
+  left:26%;
 }
 
 .sample1 {

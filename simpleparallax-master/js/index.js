@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   $('#pagepiling').pagepiling({
     menu: '#menu',
-    anchors: ['water', 'grass', 'clock', 'tree'],
+    anchors: ['water', 'Drum', 'desert', 'Blurred'],
     sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4'],
     direction: 'horizontal',
     navigation: {
