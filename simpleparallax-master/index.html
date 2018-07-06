@@ -18,6 +18,7 @@
   <link href='css/Drum.CSS' rel='stylesheet' type='text/css'>
   <link href='css/Blur.css' rel='stylesheet' type='text/css'>
   <style>
+    
     .section {
       text-align: center;
       background-size: cover;
@@ -133,7 +134,8 @@
 
 
     <div id="desert" class="section shadow-it">
-      <div id="clock" class="shadow-it" style="margin:auto;">
+      <div id="clock" class="shadow-it">
+
         <div class="clock">
           <div class="clock-face">
             <div class="hand hour-hand"></div>
@@ -147,31 +149,38 @@
 
     <div id="Blurred" class="section big-picture">
 
-      <h2>Blur and Border
-        <span class='hl'></span>
-      </h2>
-      <a href="../index.html">home </a>
 
-      <div class="controls">
-        <label for="spacing">Spacing:</label>
-        <input id="spacing" type="range" name="spacing" min="10" max="200" value="0" data-sizing="px">
+    <h2>Blur and Border
+      <span class='hl'></span>
+    </h2>
+    <a href="../index.html">home </a>
 
-        <label for="blur">Blur:</label>
-        <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+    <div class="controls">
+      <label for="spacing">Spacing:</label>
+      <input id="spacing" type="range" name="spacing" min="10" max="200" value="0" data-sizing="px">
 
-        <label for="base">Base Color</label>
-        <input id="base" type="color" name="base" value="#f168cf">
-      </div>
+      <label for="blur">Blur:</label>
+      <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
 
-
-
-      <div>
-        <button onclick="prev()"> Prev </button>
-        <img id="slider" src="img/me3.PNG" width="300px" height="300px" />
-        <button onclick="next()"> Next </button>
-      </div>
-
+      <label for="base">Base Color</label>
+      <input id="base" type="color" name="base" value="#f168cf">
     </div>
+
+
+
+    
+      <div> 
+      <img id="slider" src="img/me3.PNG" width="auto" height= "300px" />
+    
+    </div>
+
+    <div>
+      <button onclick="prev()"> Prev </button>
+      <button onclick="next()"> Next </button>
+      </div>
+
+
+
 
 
   </div>

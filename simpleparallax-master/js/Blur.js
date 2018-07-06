@@ -11,7 +11,7 @@ const inputs=document.querySelectorAll('.controls input');
     inputs.forEach(input=>input.addEventListener('mousemove', handleUpdate));
 
      var images = [
-    'img/me1.PNG', 
+    'img/me4.PNG', 
     'img/me2.PNG', 
     'img/me3.PNG'
 ];

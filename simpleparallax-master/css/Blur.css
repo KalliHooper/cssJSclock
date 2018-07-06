@@ -14,12 +14,21 @@
     color:var(--base);
   
   }
+
+  :focus { outline: none; }
   button {
-      margin-top:50px;
-      float:center;
+ cursor: pointer;
+
       height:50px;
+
+      height: 39px;
+      border-radius: 50%;
+      padding: 0.5em 1em;
+      border: thin solid grey;
   }
-  
+ button:hover {
+   background-color: beige;
+ } 
       /*
         misc styles, nothing to do with CSS variables
       */

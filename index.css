@@ -3,13 +3,21 @@ html {
     font-family: 'helvetica neue';
     text-align: center;
     font-size: 16px;
-  }
+      background:  url(hands.png) 0px 1100px repeat-y;;
+      background-size: cover;
+    
+      
+          
+          }
+          
+      
+  
   
   
   
   header,
   footer {
-    background-color: white;
+    background-color:transparent;
     opacity: 0.0;  
     overflow: hidden;
   }
