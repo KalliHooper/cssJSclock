@@ -1,39 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-
-    
-    
-* {
-    box-sizing: border-box;
-}
-
-.row {
-    display: flex;
-}
-
-.column {
-   flex: 50%;
-   padding: 10px;
-
-}
-</style>
-  <style type="text/css">
-<!--
-.tab { margin-left: 150px; }
--->
-</style>
-  <style type="text/css">
-<!--
-.img { margin-right: 200px; }
--->
-</style>
-</head>
-<body >
   <link href="index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  
   <header>
     <nav>
       <ul class="nav inline-items">
@@ -42,18 +17,18 @@
         </li>
 
         <li>
-  
-            <select onchange="location = this.options[this.selectedIndex].value;">
-    <option>Please select</option>
-    <option value="Blur-Border">JavaScript</option>
-    <option value="animate">animate</option>
-    <option value="http://www.facebook.com">Facebook</option>
-</select>
-            
-          <a href="simpleparallax-master/index.html">My Projects</a>
+          <a id="portfoliolink" href="#">My Portfolio &#9662; </a>
+          <select onchange="location = this.options[this.selectedIndex].value;">
+            <option></option>
+            <option value="simpleparallax-master/index.html">JavaScript</option>
+            <option value="animate">3D Modeling</option>
+            <option value="#">Leadership</option>
+          </select>
 
-      
-            </li> 
+         
+
+
+        </li>
         <li>
           <a href="#">Photos</a>
         </li>
@@ -61,22 +36,13 @@
           <a href="#">Blog</a>
         </li>
         <li>
-        <a href="#"> Contact Me </a>
-      </li>
+          <a href="#"> Contact Me </a>
+        </li>
       </ul>
     </nav>
   </header>
-  <div class="columnsContainer">
-    <div class="leftColumn">
-          <div class="hand hour-hand"></div>
-          <div class="hand min-hand"></div>
-          <div class="hand second-hand"></div>
-        </div>
-      </div>
-    </div>   
-    </div>
 
-  </div>
+
 
   <footer>
     <ul class="inline-items">
@@ -88,22 +54,36 @@
       </li>
     </ul>
   </footer>
-  <script src="index.js"></script>
   
-<div class="row">
-  <div class="column">
-  <h1 align="left" class= "tab"><span > About Me</span></h1>
-    <p align= "left" class="tab">     I'm learning to code! Blah blah blah. This summer I'm working at Plexus and stuff </br>so I can become a real person with a job which is p cool and super fun woohoo look </br> at this picture of me I'm so professional! </p> </div>
-  <div class="column"> <svg width="2000" height="2000">
-   <rect width="670" height="370" 
-     x="78" y="58" fill="grey" />
-</svg>   />
-     
-    
-    </div>  
-</div>
 
 
+
+
+  <div class="diamond">
+    <div class="diamondtext">
+      <h2>Hi!</h2>
+      <p>I'm Kalli</p>
+    </div>
+  </div>
+
+
+  <div class="leftdiamond">
+    <div class="diamondtext">
+      <h2>Hi!</h2>
+      <p>I'm Kalli</p>
+    </div>
+  </div>
+
+  <div class="rightdiamond">
+    <div class="diamondtext">
+      <h2>Hi!</h2>
+      <p>I'm Kalli</p>
+    </div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
