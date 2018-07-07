@@ -74,18 +74,31 @@ footer {
   text-align: center;
 }
 
-
-.nav select {
-  background: transparent;
-border-color: transparent;
-width:20px;
--webkit-appearance: none;
-
+  
+#portfoliolink ul{
+  margin: 0 auto;
+  width: 100px;
 }
 
-.nav select:after {
-  content: "*";
+.nav ul {
+ position: absolute;
+display: none;
+list-style-type: none;
+background: rgba(255, 255, 255, 0.5);
+border-radius: 1em;
+-webkit-padding-start: 0;
 }
+
+
+.nav ul li:hover {
+  background: rgba(255,255,255,1);
+ }
+
+ .nav ul li {
+  padding:0px;
+  margin: 0;
+ }
+
 .nav {
   width: 1%;
   list-style: none;
@@ -94,18 +107,12 @@ width:20px;
   padding-left: 0;
 }
 
-.nav>li,
-.nav>li>a {
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
-}
 
 .inline-items {
   margin-top: 0;
 }
 
-.inline-items li {
+.inline-items>li {
   display: inline-block;
   width: 1%;
   margin-left: 0;
@@ -115,14 +122,14 @@ width:20px;
   transition: transform 3s;
 }
 
-.inline-items li:first-child {
+.inline-items>li:first-child {
   margin-left: 0;
   border: none;
   padding-left: 0;
   padding-right: 10px;
 }
 
-.inline-items li:last-child {
+.inline-items>li:last-child {
   padding-right: 0;
 }
 
@@ -136,7 +143,7 @@ width:20px;
   width: 100%;
 }
 
-.inline-items li.grow {
+.inline-items>li.grow {
   transition: all 3.0s ease;
   padding-left: 10px;
   padding-right: 10px;

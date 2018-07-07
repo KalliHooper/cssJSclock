@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
   <link href="index.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -16,14 +17,13 @@
           <a href="#">Home</a>
         </li>
 
-        <li>
-          <a id="portfoliolink" href="#">My Portfolio &#9662; </a>
-          <select onchange="location = this.options[this.selectedIndex].value;">
-            <option></option>
-            <option value="simpleparallax-master/index.html">JavaScript</option>
-            <option value="animate">3D Modeling</option>
-            <option value="#">Leadership</option>
-          </select>
+        <li id="portfoliolink">
+          <a  href="#">My Portfolio &#9662; </a>
+            <ul>
+            <li> <a href="simpleparallax-master/index.html">JavaScript </a></li>
+            <li> <a href="animate">CAD </a></li>
+            <li> <a href="#">Excel </a></li>
+            </ul>
 
          
 
@@ -83,6 +83,8 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
   <script src="index.js"></script>
 </body>
 

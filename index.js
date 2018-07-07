@@ -20,11 +20,19 @@ const menuitems = document.querySelectorAll('.inline-items li');
 
   menutop();
   $('#portfoliolink').hover(function(){
-    $(".nav select").click();
-
-
+    $(".nav ul").css({'top':0,'left':0});
+    $(".nav ul").position({'my':'center top ', 'at':'center bottom ','of':this}); 
+     $(".nav ul").show();
   }, function(){
-
+  
   })
+  
+  $('.nav ul').hover(function(){
+    $(".nav ul").show();
+  }, function(){
+    $(".nav ul").hide();
+  })
+
 })();
+
 
